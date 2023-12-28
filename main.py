@@ -64,7 +64,7 @@ def checkPrice():
         writer = csv.writer(f)
         writer.writerow(data)
 
-    if (price > 50):
+    if (price > 55):
         sendEmail()
 
 def sendEmail():
@@ -83,4 +83,4 @@ def sendEmail():
 
 while(True):
     checkPrice()
-    time.sleep(5)
+    time.sleep(86400)
