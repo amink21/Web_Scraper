@@ -70,17 +70,17 @@ def checkPrice():
 def sendEmail():
     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
     server.ehlo()
-    server.login('amin_786@hotmail.com', '#Amin0amin')
+    server.login('emailaddress@gmail.com', 'password'
 
     subject = "The price is below on Amazon. GET IT!!"
-    body = "Amin, the price is below. It is time to buy it."
+    body = "Heyyy, the price is below. It is time to buy it."
 
     message = f"Subject: {subject}\n\n{body}"
     server.sendmail(
-        'amin_786@hotmail.com', 
+        'emailaddress@gmail.com', 
         message
     )
 
 while(True):
     checkPrice()
-    time.sleep(86400)
+    time.sleep(86400) //equals everyday
